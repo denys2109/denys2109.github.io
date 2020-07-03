@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Lobster&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="src/logo-main.png"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  <title>Order Banner</title>
+</head>
+<body>
+  <div class="bg-loader">
+    <div class="loader"></div>
+  </div>
+  <nav>
+    <div class="dashboard">
+      <a href="index.html"><img src="src/logo kwu.png" class="logo"></a>
+      <ul>
+        <li><a href="index.html" class="br">BERANDA</a></li>
+        <li>
+          <a href="#" class="br">PEMESANAN</a>
+          <ol class="dropdown-order">
+            <li class="or"><a href="print.html">Order Print</a></li>
+            <li class="or"><a href="case.html">Order Case</a></li>
+            <li class="or"><a href="banner.html">Order Banner</a></li>
+          </ol>
+        </li>
+        <li class="about-us br"><a href="about-us.html">TENTANG KAMI</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <span class="fa-stack fa-6x">
+      <i class="fa fa-circle fa-stack-2x f-logo-print" aria-hidden="true"></i>      
+      <i class="fa fa-file-text-o fa-stack-1x fa-inverse f-logo-print" aria-hidden="true"></i>
+    </span>
+    <h1 class="txt-print-dok">
+      Pemesanan Cetak Banner
+    </h1>
+    <h3 class="desc-banner">
+        Untuk pemesanan cetak banner, anda dapat memberikan keterangan berapa ukuran banner yang akan anda cetak, dan untuk keterangan tambahan anda dapat memberikan keterangan tambahan di kotak yang telah disediakan.
+    </h3>
+    <a href="#order-banner-mov" class="circle-down-print"><i class="fa fa-arrow-circle-down dropdown-print fa-5x" aria-hidden="true"></i></a>
+  </section>
+  <div class="box-order-banner">
+    <h2 class="txt-banner">Pembelian</h2>
+    <p class="select-banner">Jenis Banner</p>
+    <select name="jenis-banner">
+      <option value="select-this" selected="selected" disabled="disabled">>>SELECT<<</option>
+      <option value="banner-korchin">Korchin (Korea China)</option>
+      <option value="benner-flexi">Flexi Standar</option>
+      <option value="x-banner">X Banner</option>
+      <option value="roll-banner">Roll Banner</option>
+    </select>
+    <p class="txt-size-banner">Ukuran Banner</p>
+    <input type="text" name="ukuran" placeholder="Contoh: 2x3" class="input-size-banner"><br>
+    <input type="submit" name="tombol" value="Pesan" class="btn-psn-up btn-go">
+    <p class="psn-banner">Pesan Tambahan</p>
+    <textarea placeholder="Masukkan Pesan Anda" class="txtarea-banner"></textarea><br>
+    <input type="submit" name="tombol" value="Kirim" class="btn-psn-dw btn-go">
+  </div>
+  <div class="container-banner" id="order-banner-mov">
+    <div class="bg-container-banner">
+      <h1 class="title-banner">Order</h1>
+      <div class="box-list-price-banner">
+        <h2>Price</h2>
+        <h3>Untuk jenis banner dan harganya dapat klik icon di bawah ini</h3>
+        <a href="price-banner.html">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x tap-banner" aria-hidden="true"></i>
+            <i class="fa fa-angle-double-right fa-stack-1x fa-inverse tap-banner hov-banner" aria-hidden="true"></i>
+          </span>
+        </a>
+      </div>
+      <aside>
+        <h1 class="txt-top-banner">Kirim Designmu</h1>
+        <h1 class="txt-bot-banner">Kesini</h1>
+          <a href="https://wa.me/6282180003176"><span class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x fa-send-banner" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp fa-stack-1x fa-inverse fa-send-banner wa-banner" aria-hidden="true"></i></span>
+          </a><br>
+          <a href=""><span class="fa-stack fa-3x">
+            <i class="fa fa-circle fa-stack-2x fa-send-banner move-icon" aria-hidden="true"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse fa-send-banner move-icon" aria-hidden="true"></i></span>
+          </a>
+      </aside>
+    </div>
+  </div>
+
+  <footer>
+    <div class="socmed-footer">
+          <a href=""><span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x ftr" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-stack-1x fa-inverse" aria-hidden="true"></i></a>
+      </span>
+      <a href="" class="mid ftr"><span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x ftr" aria-hidden="true"></i>
+        <i class="fa fa-facebook-square fa-stack-1x fa-inverse" aria-hidden="true"></i></a>
+      </span>
+      <a href="https://wa.me/6282180003176"><span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x ftr" aria-hidden="true"></i>
+        <i class="fa fa-whatsapp fa-stack-1x fa-inverse" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $(".bg-loader").hide();
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Lobster&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="src/logo-main.png"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  <title>Harga dan Jenis Banner</title>
+</head>
+<body>
+  <div class="bg-loader">
+    <div class="loader"></div>
+  </div>
+  <nav>
+    <div class="dashboard">
+      <a href="index.html"><img src="src/logo kwu.png" class="logo"></a>
+      <ul>
+        <li><a href="index.html" class="br">BERANDA</a></li>
+        <li>
+          <a href="#" class="br">PEMESANAN</a>
+          <ol class="dropdown-order">
+            <li class="or"><a href="print.html">Order Print</a></li>
+            <li class="or"><a href="case.html">Order Case</a></li>
+            <li class="or"><a href="banner.html">Order Banner</a></li>
+          </ol>
+        </li>
+        <li class="about-us br"><a href="about-us.html">TENTANG KAMI</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <span class="fa-stack fa-6x">
+      <i class="fa fa-circle fa-stack-2x f-logo-print" aria-hidden="true"></i>      
+      <i class="fa fa-file-text-o fa-stack-1x fa-inverse f-logo-print" aria-hidden="true"></i>
+    </span>
+    <h1 class="txt-print-dok mov-price">
+      Harga dan Jenis Banner
+    </h1>
+    <a href="#order-price-banner-mov" class="circle-down-print"><i class="fa fa-arrow-circle-down dropdown-print fa-5x" aria-hidden="true"></i></a>
+  </section>
+
+  <content id="order-price-banner-mov" class="txt-order">
+    <div class="bg-price">
+      <div class="content-price">  
+        <h2 class="top-txt">Banner Outdoor</h2>
+        <p>Banner outdoor yang lazim kita jumpai berbentuk memanjang horizontal atau disebut juga spanduk. Banner ini biasanya dipasang di tempat yang banyak dilalui orang agar mendapat exposure yang baik. Banner jenis ini haruslah tahan cuaca panas dan hujan. Perhatikan juga penahan banner spanduk ini jika kurang kuat maka saat angin kencang berhembus maka tiang penahan beserta banner nya bisa roboh.
+        </p>
+        <div class="in-1">
+          <h2>1. Bahan: Korchin (Korea China)</h2>
+          <p>Bahan Korchin memiliki serat yang lebih kasar dibanding bahan Flexi standard an juga permukaan matte sehingga cahaya tidak memantul apabila di foto atau terkena cahaya. 
+
+          Harga per meter: IDR 35.000.
+          Berat per meter: 340gr</p>
+        </div>
+        <div class="in-2">
+          <h2>2. Bahan: Flexi Standar</h2>
+          <p>Bahan Flexi standar lebih halus dari korchin agak memantulkan cahaya di banding dengan Korchin.
+
+          Harga per meter IDR 20.000
+          Berat per meter: 280gr</p>
+        </div>
+        <h2 class="bot-txt">Banner Indoor</h2>
+        <p>Banner juga seringkali digunakan di dalam ruangan biasanya untuk keperluan seminar, launching produk dan lain nya. Ada banner yang dibentang secara horizontal/landscape seperti pemasangan banner outdoor, atau ada yang berbentuk portrait/memanjang biasa disebut juga spanduk. Berikut beberapa jenis banner indoor.</p>
+        <div class="out-1">
+          <h2>3. X Banner</h2>
+          <p>X banner disebut demikian karena penyangga banner bagian belakang berbentuk huruf X.  Banner jenis ini biasa digunakan di dalam ruangan, terkadang di luar ruangan tetapi masih terlindungi dari sinar matahari langsung.
+
+          X Banner ini sangat ringan jadi kurang cocok jika terdapat angin yang cukup kencang karena bisa terjatuh/terbalik, bahkan bisa terbang jika angin sangat kencang.
+
+          1 set X banner bahan outdoor/flexi/korea ukuran 60 cm x 160 cm harga 150 ribu rupiah.</p>
+        </div>
+        <div class="out-2">
+          <h2>4. Roll Banner</h2>
+          <p>Roll banner hampir mirip dengan X banner tetapi memiliki dudukan yang lebih kokoh. Selain itu banner jenis ini lebih praktis, saat tidak digunakan banner bisa digulung dan terlinding didalam roll besi nya. Ketika digunakan tinggal ditarik saja.
+
+          Rekomendasi bahan untuk roll banner
+          1. Albatros
+          2. Luster
+          Ukuran+ Harga roll banner
+          1. Kecil 160×60  harga 350.000,-
+          2. Besar 200×80 harga 550.000,-
+          </p>
+        </div>
+        <a href="banner.html" class="back-page">Kembali Ke Halaman Sebelumnya</a>
+      </div>
+    </div>
+  </content>
+
+  <footer>
+    <div class="socmed-footer">
+          <a href=""><span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x ftr" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-stack-1x fa-inverse" aria-hidden="true"></i></a>
+      </span>
+      <a href="" class="mid ftr"><span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x ftr" aria-hidden="true"></i>
+        <i class="fa fa-facebook-square fa-stack-1x fa-inverse" aria-hidden="true"></i></a>
+      </span>
+      <a href="https://wa.me/6282180003176"><span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x ftr" aria-hidden="true"></i>
+        <i class="fa fa-whatsapp fa-stack-1x fa-inverse" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    
+      $(document).ready(function(){
+        $(".bg-loader").hide();
+      })
+    </script>
+</body>
+</html>

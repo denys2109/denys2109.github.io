@@ -1,1 +1,1 @@
-# denys2109.github.io
+# galerikudigital.github.io
